@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9a0f215-6730-4fcf-9456-306dcac3facb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.ignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a9a0f215-6730-4fcf-9456-306dcac3facb" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beidou/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
-              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#482#490#0" expanded="true" />
@@ -62,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/beidou/mybatis/generator/ModelCommentsPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="54" />
+              <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -795,12 +791,12 @@
       <option name="presentableId" value="Default" />
       <updated>1523430262300</updated>
       <workItem from="1523430266291" duration="2629000" />
-      <workItem from="1523436860446" duration="4793000" />
+      <workItem from="1523436860446" duration="4902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7422000" />
+    <option name="totallyTimeSpent" value="7531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="725" extended-state="6" />
@@ -1034,7 +1030,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beidou/mybatis/generator/ModelCommentsPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="54" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="54" />
+          <caret line="13" column="54" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1056,7 +1052,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/beidou/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
-          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#482#490#0" expanded="true" />
