@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE generatorConfiguration  
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"  
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+	<!-- 配置文件路径 -->
+	<properties resource="app.properties" />
+
+	<context id="DB2Tables" targetRuntime="MyBatis3">
+
+		<!-- <property name="xmlFormatter" value="com.haogrgr.mybatis.generator.utils.SortedXmlFormatter" /> -->
+
+		<plugin type="com.haogrgr.mybatis.generator.plugin.TableConfigPlugin" />
+
+		<plugin type="com.haogrgr.mybatis.generator.plugin.MapperPlugin2">
+			<property name="baseMapperName" value="${plugin.mapper.baseMapperName}" />
+			<property name="toBeReplace" value="${plugin.common.toBeReplace}" />
+		</plugin>
+
+		<plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+		<plugin type="com.haogrgr.mybatis.generator.plugin.ModelPlugin">
+			<property name="generateSerialVersionField" value="${plugin.model.generateSerialVersionField}" />
+			<property name="setMethodReturnThis" value="${plugin.model.setMethodReturnThis}" />
+			<property name="toBeReplace" value="${plugin.common.toBeReplace}" />
+		</plugin>
+
+		<plugin type="com.haogrgr.mybatis.generator.plugin.ServicePlugin">
+			<property name="generateIface" value="${plugin.service.generateIface}" />
+			<property name="servicePackage" value="${generator.service.servicePackage}" />
+			<property name="baseServiceName" value="${plugin.service.baseServiceName}" />
+			<property name="serviceImplPackage" value="${generator.service.serviceImplPackage}" />
+			<property name="baseServiceSupportName" value="${plugin.service.baseServiceSupportName}" />
+			<property name="serviceImplNameSuffix" value="${plugin.service.serviceImplNameSuffix}" />
+			<property name="baseMapperName" value="${plugin.mapper.baseMapperName}" />
+			<property name="toBeReplace" value="${plugin.common.toBeReplace}" />
+		</plugin>
+
+
+		<commentGenerator>
+			<!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+			<property name="suppressAllComments" value="true" />
+		</commentGenerator>
+
+		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+		<jdbcConnection driverClass="${db.driver}" connectionURL="${db.url}" userId="${db.user}" password="${db.password}">
+		</jdbcConnection>
+
+		<!-- true:将DECIMAL,NUMERIC解析为BigDecimal false:解析为Integer -->
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="true" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetProject="${generator.common.target.project}" targetPackage="${generator.model.package}">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetProject="${generator.common.target.project}" targetPackage="${generator.mapper.xmlPackage}">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER" targetProject="${generator.common.target.project}" targetPackage="${generator.mapper.javaPackage}">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+
+		<table schema="job_platform" tableName="job" domainObjectName="JobDO">
+			<generatedKey column="id" sqlStatement="JDBC" />
+		</table>
+		
+		<!--<table schema="zuche_crawler" tableName="huizuche_car_group_price" domainObjectName="HuizucheCarGroupPriceDO">
+			<generatedKey column="id" sqlStatement="JDBC" /> 
+		</table>-->
+		
+		<!-- <table schema="lang_atlantic" tableName="c_announcement" domainObjectName="AnnouncementPO"> 
+			<generatedKey column="id" sqlStatement="JDBC" /> 
+		</table>
+		<table schema="lang_atlantic" tableName="a_city" domainObjectName="CityPO"> 
+			<generatedKey column="city_id" sqlStatement="JDBC" /> 
+		</table> -->
+		
+		<!-- <table schema="lang_atlantic" tableName="c_message_status" domainObjectName="MessageStatusPO"> 
+			<generatedKey column="id" sqlStatement="JDBC" /> 
+		</table> -->
+
+	<!-- <table schema="lang_atlantic" tableName="c_help_menu" domainObjectName="HelpMenuPO">
+		<generatedKey column="menu_id" sqlStatement="JDBC" />
+	</table>
+		
+		
+		<table schema="lang_atlantic" tableName="a_city" domainObjectName="CityPO"> 
+			<generatedKey column="city_id" sqlStatement="JDBC" /> 
+		</table> -->
+
+
+		<!-- loc -->
+<!-- 		<table schema="lang_atlantic" tableName="a_city" domainObjectName="CityPO"> -->
+<!-- 			<generatedKey column="city_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="a_country" domainObjectName="CountryPO"> -->
+<!-- 			<generatedKey column="country_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="a_landmark" domainObjectName="LandmarkPO"> -->
+<!-- 			<generatedKey column="landmark_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+
+
+ 		<!-- basic -->
+<!-- 		<table schema="lang_atlantic" tableName="c_config" domainObjectName="ConfigPO"> -->
+<!-- 			<generatedKey column="config_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="c_currency" domainObjectName="CurrencyPO"> -->
+<!-- 			<generatedKey column="currency_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="c_function" domainObjectName="FunctionPO"> -->
+<!-- 			<generatedKey column="func_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="c_operation_log" domainObjectName="OperationLogPO"> -->
+<!-- 			<generatedKey column="log_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="c_supplier" domainObjectName="SupplierPO"> -->
+<!-- 			<generatedKey column="supplier_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="c_exchange_rate" domainObjectName="ExchangeRatePO"> -->
+<!-- 			<generatedKey column="rate_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+
+
+		<!-- order -->
+<!-- 		<table schema="lang_atlantic" tableName="o_order" domainObjectName="OrderPO"> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="o_order_fee" domainObjectName="OrderFeePO"> -->
+<!-- 			<generatedKey column="order_fee_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="o_order_log" domainObjectName="OrderLogPO"> -->
+<!-- 			<generatedKey column="log_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+
+
+ 		<!-- product -->
+<!-- 		<table schema="lang_atlantic" tableName="p_car_category" domainObjectName="CarCategoryPO"> -->
+<!-- 			<generatedKey column="category_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="p_car_group" domainObjectName="CarGroupPO"> -->
+<!-- 			<generatedKey column="group_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="p_package" domainObjectName="PackagePO"> -->
+<!-- 			<generatedKey column="package_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+
+
+ 		<!-- supplier -->
+<!-- 		<table schema="lang_atlantic" tableName="a_city_mapping" domainObjectName="CityMappingPO"> -->
+<!-- 			<generatedKey column="mapping_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="a_landmark_store_mapping" domainObjectName="LandmarkStoreMappingPO"> -->
+<!-- 			<generatedKey column="mapping_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+<!-- 		<table schema="lang_atlantic" tableName="o_supplier_request_log" domainObjectName="SupplierRequestLogPO"> -->
+<!-- 			<generatedKey column="log_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+<!-- 		<table schema="lang_atlantic" tableName="p_avis_car_group" domainObjectName="AvisCarGroupPO"> -->
+<!-- 			<generatedKey column="group_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="p_supplier_package" domainObjectName="SupplierPackagePO"> -->
+<!-- 			<generatedKey column="supplier_package_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+<!-- 		<table schema="lang_atlantic" tableName="s_store" domainObjectName="StorePO"> -->
+<!-- 			<generatedKey column="store_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="s_store_biz_hours" domainObjectName="StoreBizHoursPO"> -->
+<!-- 			<generatedKey column="bus_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="s_store_holiday_hours" domainObjectName="StoreHolidayHoursPO"> -->
+<!-- 			<generatedKey column="holiday_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+
+
+ 		<!-- driver -->
+<!-- 		<table schema="lang_atlantic" tableName="u_driver" domainObjectName="DriverPO"> -->
+<!-- 			<generatedKey column="driver_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+<!-- 		<table schema="lang_atlantic" tableName="u_driver_trans" domainObjectName="DriverTransPO"> -->
+<!-- 			<generatedKey column="trans_id" sqlStatement="JDBC" /> -->
+<!-- 		</table> -->
+
+	</context>
+</generatorConfiguration> 
